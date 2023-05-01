@@ -11,13 +11,18 @@ Anddd I edited some layout to make it better:)-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>FOOOOOD</title>
+    <!-- script to display webp photos in IE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
 </head>
 <body>
     <header>
         <!-- rectangle background and big orange photo -->
         <div class="logo">
             <h1>foodbar</h1>
-            <img src="img/orange.png" alt="" id="poster">
+            <picture>
+                <source srcset="img/orange.webp" type="image/webp" id="poster">
+                <img src="img/orange.png" alt="" id="poster">
+            </picture>
         </div>
 
         <!-- nav bar -->
@@ -165,7 +170,7 @@ Anddd I edited some layout to make it better:)-->
         </div>
 
     </header>
-
+    
     <script src="app.js"></script>
 </body>
 </html>
