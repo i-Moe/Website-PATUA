@@ -70,6 +70,8 @@ header .logo h1{
 header .logo .big_img img{
     width: 300px;
     /* margin: 20px 0px 0px -30px; */
+    height: 300px;
+    object-fit: cover;
     margin-top: 20px;
     position: relative;
     left: -12%;
@@ -264,6 +266,7 @@ header section .cards{
     width: 90%;
     height: 140px;
     border: 1px solid #000;
+    background-color: #0ea47a54;
     position: relative;
     top: 20%;
     padding-left: 30px;
@@ -284,9 +287,9 @@ header section .cards .card{
     min-width: 125px;
     /* min-height: 125px; */
     height: 125px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-right: 13px;
-    background: #282828;
+    /* background: #282828; */
     border-radius: 30px 10px 10px 10px;
 }
 
@@ -295,26 +298,31 @@ header section .cards .card:nth-last-child(1){
 }
 
 header section .cards .card .dis{
-    width: 70px;
+    /* width: 70px;
     position: relative;
     top: 5px;
-    left: 28px;
+    left: 28px; */
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 30px 10px 10px 10px;
+    border: 1px solid #0ea47a;
 }
 
 header section .cards .card h4{
     position: absolute;
-    bottom: 9px;
-    right: 16px;
+    bottom: 7px;
+    right: 13px;
     /* top: 20px;
     right: 20px; */
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 header section .cards .card h5{
     color: #fff;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
     padding: 0px 10px ;
     margin-top: -8px;
@@ -323,8 +331,8 @@ header section .cards .card h5{
     white-space: nowrap;
     text-overflow: ellipsis;
     position: absolute;
-    bottom: 11px;
-    left: 7px;
+    bottom: 24px;
+    left: -2px;
 }
 /* text-overflow: ellipsis;
 if the text is too long to fit on a single line, it will be truncated and an ellipsis (…) will be displayed at the end. */
