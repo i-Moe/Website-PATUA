@@ -155,8 +155,8 @@ header nav .right_menu .user_cart{
 
 header nav .right_menu .user_cart .user{
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: 10px;
 }
