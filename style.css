@@ -481,29 +481,44 @@ header section .social .icons a:hover{
     z-index: -1;
     filter: drop-shadow(7px 9px 12px rgb(0, 0, 0, .6));}
 
-    footer {
-        width: 80%;
+    .footer {
         background-color: #282828;
-        padding: 0px;
+        color: #fff;
+        padding: 20px;
         text-align: center;
         position: fixed;
-        bottom: 0px;
+        bottom: 0;
       }
       
-      ul {
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       
-      .links-uteis {
-        float: left;
-      }
-      
+      .links-uteis,
       .redes-sociais {
-        float: right;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
       }
       
+      .links-uteis li,
+      .redes-sociais li {
+        margin-right: 10px;
+      }
+      
+      .links-uteis a,
+      .redes-sociais a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .footer-bottom {
+        margin-top: 20px;
+      }
+   
       /* Outras regras de estilo para o footer, como cores, fontes, etc. */
       
 
