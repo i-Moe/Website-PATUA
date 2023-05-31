@@ -484,11 +484,12 @@ header section .social .icons a:hover{
 
 
 
+/* <----------- ICONS SECTION-----------> */
 .main-section{
     width: 90%;
     max-width: 1200px;
     height: 80vh;
-    border: 5px solid cornflowerblue;
+    border: 2px solid cornflowerblue;
 }
 
 .icon-column {
@@ -498,20 +499,38 @@ header section .social .icons a:hover{
     align-items: center;
     justify-content: center;
   }
+
   #section1 {
-    background-color: #FFC0CB; /* Cor 1 */
+    background-color:#20fcbde8 ; /* Cor 1 */
     height: 26vh;
   }
   
   #section2 {
-    background-color: #00FFFF; /* Cor 2 */
+    background-color: #2cf5d4; /* Cor 2 */
     height: 26vh;
   }
   
   #section3 {
-    background-color: #FFFF00; /* Cor 3 */
-    height: 26vh;
+    background-color: #0ce9c4; /* Cor 3 */
+    height: 28vh;
   }
+  .icon-item {
+    text-align: center;
+    padding: 3%;
+  }
+  
+  .icon-item img {
+    width: 70px; /* Defina o tamanho desejado para a imagem */
+    height: 70px;
+    object-fit: cover; /* Ajuste a propriedade de ajuste da imagem conforme necessário */
+    border-radius: 50%; /* Se desejar uma forma circular para a imagem */
+  }
+  
+  .icon-item p {
+    font-size: 24px;
+    color: #333333;
+  }
+  
   
 
 footer{
