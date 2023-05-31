@@ -484,13 +484,35 @@ header section .social .icons a:hover{
 
 
 
-.second{
+.main-section{
     width: 90%;
     max-width: 1200px;
     height: 80vh;
-    background-color: cornflowerblue;
+    border: 5px solid cornflowerblue;
 }
 
+.icon-column {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #section1 {
+    background-color: #FFC0CB; /* Cor 1 */
+    height: 26vh;
+  }
+  
+  #section2 {
+    background-color: #00FFFF; /* Cor 2 */
+    height: 26vh;
+  }
+  
+  #section3 {
+    background-color: #FFFF00; /* Cor 3 */
+    height: 26vh;
+  }
+  
 
 footer{
     width: 100%;
