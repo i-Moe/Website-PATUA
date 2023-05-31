@@ -49,7 +49,7 @@ header .logo{
 header .logo .clover{
     position: relative;
     top: 10px;
-    left: 60px;
+    left: 57px;
 }
 
 header .logo .clover img{
@@ -65,13 +65,13 @@ header .logo h1{
     font-weight: 600;
     position: absolute;
     top: 0;
-    left: 101px;
+    left: 99px;
 }
 
 #poster{
-    width: 400px;
+    width: 370px;
     /* margin: 20px 0px 0px -30px; */
-    height: 400px;
+    height: 370px;
     object-fit: cover;
     margin-top: 20px;
     position: relative;
@@ -166,7 +166,7 @@ header nav .right_menu .user_cart .user img{
     width: 100%;
 }
 
-header nav .right_menu .user_cart .user::before{
+/* header nav .right_menu .user_cart .user::before{
     content: '';
     position: absolute;
     width: 5px;
@@ -176,7 +176,7 @@ header nav .right_menu .user_cart .user::before{
     top: 0;
     right: 0;
     z-index: 9999;
-}
+} */
 
 /* menu on the left */
 header .left_menu{
@@ -215,8 +215,8 @@ header section{
 header section .content{
     position:relative;
     border: 1px solid lightcoral;
-    left: 570px;
-    margin-top: 10%;
+    left: 520px;
+    margin-top: 9%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -225,26 +225,29 @@ header section .content{
 }
 
 header section .content h1{
-    font-size: 40px;
+    font-size: 30px;
     transition: 1s linear;
 }
 
 header section .content h3{
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
     width: 290px;
     height: 45px;
     word-break: break-all;
+    margin-top: 8px;
 }
 
 header section .content .price_order{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 7px;
+    justify-content: space-between;
+    width: 40%;
 }
 
 header section .content .price_order .price h2{
-    font-size: 20px;
+    font-size: 48px;
     color: #dc1313;
     line-height: 18px;
 }
@@ -255,12 +258,15 @@ header section .content .price_order .price p{
 }
 
 header section .content .price_order a{
-    padding: 4px 20px;
+    padding: 6px 26px;
     background: #121213;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    margin-left: 35px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* margin-left: 142px; */
+    border-radius: 5px;
 }
 
 /*  cards of colorful oranges on the bottom */
@@ -270,7 +276,7 @@ header section .cards{
     border: 1px solid #000;
     background-color: #0ea47a54;
     position: relative;
-    top: 20%;
+    top: 25%;
     padding-left: 30px;
     display: flex;
     align-items: center;
@@ -368,7 +374,7 @@ header section .social{
     position: relative;
     width: 100%;
     border: 1px solid mediumaquamarine;
-    top: 20%;
+    top: 25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -419,7 +425,7 @@ header section .social .icons a:hover{
     z-index: 9999;
     /* right: 1rem; */
     /* bottom: 1rem; */
-    top: 5rem;
+    top: 4.3rem;
     justify-self: end;
 }
 
