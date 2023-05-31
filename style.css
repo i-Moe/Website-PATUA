@@ -484,41 +484,35 @@ header section .social .icons a:hover{
 
 
 
-/* .main-section{
+.main-section{
     width: 90%;
     max-width: 1200px;
     height: 80vh;
-    background-color: cornflowerblue;
-} */
-.main-section {
-    height: calc(100vh - 20vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid;
-    width: 90%;
-    max-width: 1200px;  background:  linear-gradient( red 130px, green 180px, green 300px, blue 300px, rgb(36, 249, 82) 400px)
+    border: 5px solid cornflowerblue;
+}
 
-  }
-  
-  .icon-column {
+.icon-column {
+    height: 80vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+  }
+  #section1 {
+    background-color: #FFC0CB; /* Cor 1 */
+    height: 26vh;
   }
   
-  .icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-    
+  #section2 {
+    background-color: #00FFFF; /* Cor 2 */
+    height: 26vh;
   }
   
-  .icon-item i {
-    font-size:70px;
+  #section3 {
+    background-color: #FFFF00; /* Cor 3 */
+    height: 26vh;
   }
+  
 
 footer{
     width: 100%;
