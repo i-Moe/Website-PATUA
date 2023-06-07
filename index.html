@@ -1,291 +1,460 @@
-<!-- Website built with YouTube tutorial 
-"Restaurant Website Using HTML CSS And JAVASCRIPT(https://youtu.be/7Qvc52uKrm0)" 
-Anddd I edited some layout to make it better:)-->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Orange website template which is one of the projects in our programming learning journey. We keep improving it:)">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="icon" href="img/PATUA_logo_clover.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <title>PATUÁ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!-- script to display webp photos in IE -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script> -->
+
+
+
+
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <!--=============== BOXICONS ===============-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+   <title>PATUÁ</title>
+
 </head>
 
 <body>
-    <header>
-        <!-- rectangle background and big orange photo -->
-        <div class="logo">
-            <div class="clover"><img src="img/PATUA_logo_clover.svg" alt=""></div>
-            <h1>PATUÁ</h1>
-            <div class="big_img"><img src="img/necklace_1.jpg" alt="" id="poster"></div>
-        </div>
+   <header class="header" id="header">
+      <nav class="nav container">
 
-        <!-- nav bar -->
-        <nav>
-            <i class="bi menu bi-list"></i>
-            <div class="right_menu">
-                <!-- <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Hotline</a></li>
-                </ul> -->
-                <div class="user_cart">
-                    <!-- <i class="bi bi-cart-dash-fill"></i> -->
-                    <div class="user">
-                        <a href="https://www.instagram.com/patua.acessoriosbh">
-                            <img src="img/insta.png" alt="">
-                        </a>
 
-                    </div>
-                </div>
+         <div class="nav_clover_logo">
+            <img src="assets/img/PATUA_logo_clover.svg" alt="">
+            <a href="#" class="nav__logo">PATUÁ</a>
+         </div>
+
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">Sobre</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#collections" class="nav__link">Em alta</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#testimonials" class="nav__link">Depoimentos</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contato</a>
+               </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-fill"></i>
             </div>
-        </nav>
-
-        <!-- menu on the left -->
-        <div class="left_menu">
-            <a href="#">process</a>
-            <a href="#">design</a>
-            <a href="#">material</a>
-        </div>
-
-        <!-- main section of the page -->
-        <section>
-
-            <!-- discription of the big orange -->
-            <div class="content">
-                <h1 id="title">Quem somos nós?</h1>
-                <h3 id="discription">Acessórios femininos👩‍🎤
-                    Varejo e atacado🛒
-                    Preço especial para lojistas 📿🛍️🛒💰
-                    Compre pelo WhatsApp-link👇🏽</h3>
-                <div class="price_order">
-                    <div class="price">
-                        <h2 id="price_cont">$17</h2>
-                        <!-- <p>total payble</p> -->
-                    </div>
-                    <a href="#">Definir</a>
-                </div>
+         </div>
+         <div class="nav__buttons">
+            <!-- <i class="ri-moon-fill change-theme" id="theme-button"></i> -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-fill"></i>
             </div>
+         </div>
+      </nav>
+   </header>
 
-            <!-- cards of colorful oranges on the bottom -->
-            <div class="cards">
-                <div class="card">
-                    <img src="img/necklace_2.jpg" alt="" class="dis">
-                    <h4>$15</h4>
-                    <h5>Blue</h5>
-                    <p style="display: none;">Fuck yeahhhhhhhhh I love SARAJEVOOO<3< /p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_1.jpg" alt="" class="dis">
-                    <h4>$13</h4>
-                    <h5>Wow</h5>
-                    <p style="display: none;">I love BRAZIL:)<3< /p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_3.jpg" alt="" class="dis">
-                    <h4>$17</h4>
-                    <h5>Necklace</h5>
-                    <p style="display: none;">Summer is coming!<3< /p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_4.jpg" alt="" class="dis">
-                    <h4>$11</h4>
-                    <h5>Breathtaking</h5>
-                    <p style="display: none;">What's up! Fuck yeahhhhhhhhh I love SARAJEVOOO<3< /p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_5.jpg" alt="" class="dis">
-                    <h4>$12</h4>
-                    <h5>Earrings</h5>
-                    <p style="display: none;">Hey! Fuck yeahhhhhhhhh I love SARAJEVOOO<3< /p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_6.jpg" alt="" class="dis">
-                    <h4>$7</h4>
-                    <h5>Pearl necklace</h5>
-                    <p style="display: none;">Oh! Fuck yeahhhhhhhhh I love SARAJEVOOO! I like PEKARA! I like pasha's
-                        kebab!<3</p>
-                </div>
-                <div class="card">
-                    <img src="img/necklace_7.jpg" alt="" class="dis">
-                    <h4>$15</h4>
-                    <h5>Yeah</h5>
-                    <p style="display: none;">Yo! Fuck yeahhhhhhhhh I love SARAJEVOOO<3< /p>
-                </div>
+   <main class="main">
+      <section class="home section" id="home">
+        
+         <div class="home__container container grid">
 
-                <!-- ↓Original cards↓ -->
-                <!-- <div class="card">
-                    <img src="img/necklace_2.jpg" alt="" class="dis">
-                    <h4>$15</h4>
-                    <h5>Blue</h5>
-                    <p style="display: none;">Fuck yeahhhhhhhhh I love SARAJEVOOO<3</p>
-                    <!-- <p>Per Plate</p> -->
-                <!-- <div class="rate_cart">
-                        <h6>5.0</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div> -->
-                <!-- </div>
-                <div class="card">
-                    <img src="img/pink.png" alt="" class="dis">
-                    <h4>$20</h4>
-                    <h5>Pink</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>3.9</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/green.png" alt="" class="dis">
-                    <h4>$19</h4>
-                    <h5>Green</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>4.6</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/blue.png" alt="" class="dis">
-                    <h4>$15</h4>
-                    <h5>Blue</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>5.0</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/pink.png" alt="" class="dis">
-                    <h4>$20</h4>
-                    <h5>Pink</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>3.9</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/green.png" alt="" class="dis">
-                    <h4>$19</h4>
-                    <h5>Green</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>4.6</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/blue.png" alt="" class="dis">
-                    <h4>$15</h4>
-                    <h5>Blue</h5>
-                    <p>Per Plate</p>
-                    <div class="rate_cart">
-                        <h6>5.0</h6>
-                        <i class="bi bi-cart-dash-fill"></i>
-                    </div>
-                </div>                -->
+
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+               space-between="0" centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+               <swiper-slide><img src="assets/img/necklace_1.jpg" alt=""></swiper-slide>
+               <swiper-slide><img src="assets/img/necklace_2.jpg" alt=""></swiper-slide>
+               <swiper-slide><img src="assets/img/necklace_3.jpg" alt=""></swiper-slide>
+               <swiper-slide><img src="assets/img/necklace_4.jpg" alt=""></swiper-slide>
+               <swiper-slide><img src="assets/img/necklace_5.jpg" alt=""></swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+
+
+
+
+            
+
+
+
+
+         </div>
+         <div class="ad-line">
+            <p>✨Oferta válida até 31/07✨</p>
+         </div>
+
+         <a href="#">
+            <div class="whatsapp-button">
+               <i class="bx bxl-whatsapp"></i>
+            </div>
+         </a>
+
+
+      </section>
+
+      <section class="about section" id="about">
+         <!-- <span class="section__subtitle">My Intro</span> -->
+
+         <div class="about__container container grid">
+
+
+
+            <div class="title">
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
+               <h2 class="section__title">Quem somos nós?</h2>
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
             </div>
 
-            <!-- arrows and social icons on the bottom -->
-            <div class="social">
-                <div class="btns">
-                    <i class="bi bi-caret-left-fill"></i>
-                    <i class="bi bi-caret-right-fill"></i>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                </div>
+
+
+
+
+            <!-- <h2 class="section__title">ABOUT US</h2> -->
+
+            <div class="about__data">
+
+               <p class="about__description">
+                  Fundada em 2022 pela Maria e o João, a PATUA...
+               </p>
+
+
+               <div class="about__info">
+                  <div class="about__box">
+                     <i class='bx bx-award about__icon'></i>
+                     <h3 class="about__title">Experience<br>Yeah!</h3>
+                     <!-- <span class="about__subtitle">Fresher</span> -->
+                  </div>
+                  <div class="about__box">
+                     <i class='bx bx-briefcase-alt about__icon'></i>
+                     <h3 class="about__title">Completed<br>Yeah!</h3>
+                     <!-- <span class="about__subtitle">25+ Projects</span> -->
+                  </div>
+                  <div class="about__box">
+                     <i class='bx bx-support about__icon'></i>
+                     <h3 class="about__title">Support<br>Yeah!</h3>
+                     <!-- <span class="about__subtitle">24/7 Online</span> -->
+                  </div>
+               </div>
+
+
+
+               <!-- <a href="#contact" class="button btn-light">Contact Me</a> -->
             </div>
-        </section>
-
-        <!-- rotate button -->
-        <div class="rotate_btn">
-            <a href="#" class="btn">
-                <div class="rotate">
-                    <div class="btn_text">
-                        <i class="bi bi-whatsapp"></i>
-                    </div>
-                    <!-- <img src="img/rotate_btn.svg" alt=""> -->
-                    <svg width="136" height="128" viewBox="0 0 136 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M88.5628 126.157L88.5613 126.158C87.1578 126.608 85.5821 126.589 83.7733 126.247C81.9519 125.903 80.0231 125.259 77.9135 124.553L77.8666 124.537C74.8046 123.506 71.3545 122.345 68.0042 122.345H67.9958C64.6944 122.345 61.2931 123.481 58.2711 124.491L58.0879 124.552L58.0865 124.553C55.9765 125.259 54.05 125.903 52.2297 126.247C50.4226 126.589 48.8462 126.608 47.4377 126.158L47.4372 126.157C45.9408 125.679 44.5939 124.681 43.2814 123.3C41.9619 121.912 40.7647 120.235 39.5142 118.478C39.5142 118.478 39.5142 118.478 39.5141 118.478L39.4205 118.347C37.6512 115.86 35.6341 113.025 33.085 111.205C30.5102 109.364 27.1465 108.343 24.1747 107.441L23.9765 107.381L23.9755 107.381C21.9056 106.754 19.9261 106.151 18.1887 105.351C16.4572 104.554 15.0948 103.616 14.1922 102.398C13.3 101.194 12.8213 99.6963 12.5879 97.8869C12.3523 96.061 12.3791 94.0441 12.4129 91.8286L12.413 91.8253L12.4156 91.63C12.4563 88.5466 12.5025 85.0528 11.5008 82.0273C10.5466 79.1419 8.45711 76.4187 6.62935 74.0366L6.51711 73.8903L6.51708 73.8903C5.19415 72.1658 3.93253 70.5178 2.99023 68.8375C2.05316 67.1665 1.5 65.5778 1.5 64C1.5 62.4222 2.05316 60.8335 2.99023 59.1625C3.93221 57.4828 5.19328 55.8354 6.51571 54.1115C6.51617 54.1109 6.51662 54.1103 6.51708 54.1097L6.5554 54.06C8.41194 51.6504 10.5343 48.8958 11.501 45.9722C12.5025 42.9468 12.4563 39.4532 12.4156 36.37C12.4147 36.3047 12.4138 36.2396 12.413 36.1747L12.413 36.1743C12.3834 33.9577 12.3584 31.9403 12.5942 30.1132C12.8278 28.3024 13.3049 26.8038 14.1938 25.5995C15.0961 24.3794 16.4575 23.442 18.1881 22.6461C19.9254 21.8472 21.9043 21.2468 23.9755 20.6193C24.0278 20.6035 24.0802 20.5876 24.1327 20.5717C27.1245 19.6658 30.4983 18.6441 33.085 16.7946C35.6579 14.9578 37.6873 12.0968 39.4712 9.58217L39.5141 9.52159C39.5144 9.52118 39.5147 9.52077 39.515 9.52035C40.7652 7.76387 41.9622 6.08753 43.2814 4.6999C44.5937 3.31953 45.9404 2.32094 47.4364 1.84279C48.8415 1.39587 50.4187 1.41528 52.2274 1.75618C54.0489 2.09948 55.9782 2.7413 58.0865 3.44747L58.1335 3.4633C61.1955 4.49362 64.6456 5.65454 67.9958 5.65454C71.2972 5.65454 74.6984 4.51852 77.7205 3.50915L77.9038 3.44793L77.9043 3.44775C80.0189 2.7409 81.9474 2.09727 83.7691 1.75296C85.5774 1.41118 87.1538 1.39192 88.5623 1.84239L88.5628 1.84254C90.0592 2.32059 91.4061 3.31929 92.7186 4.6999C94.0381 6.08785 95.2354 7.76466 96.4859 9.52159L96.5795 9.65322C98.3491 12.1402 100.366 14.9755 102.916 16.7953C105.491 18.6359 108.854 19.6568 111.825 20.5588L112.024 20.619L112.025 20.6193C114.094 21.2464 116.074 21.849 117.811 22.6489C119.542 23.4459 120.904 24.3836 121.807 25.6007C122.695 26.8047 123.172 28.303 123.406 30.1132C123.642 31.9403 123.617 33.9577 123.587 36.1743V36.1747L123.584 36.3699C123.544 39.4531 123.497 42.9468 124.499 45.9722C125.453 48.8577 127.543 51.5811 129.371 53.9633L129.483 54.1097L130.641 53.2212L129.483 54.1097C130.806 55.8342 132.067 57.4822 133.01 59.1625C133.947 60.8335 134.5 62.4222 134.5 64C134.5 65.5778 133.947 67.1665 133.01 68.8375C132.068 70.5175 130.806 72.1652 129.484 73.8894C129.483 73.8897 129.483 73.89 129.483 73.8903L129.445 73.9401C127.588 76.3496 125.466 79.1043 124.499 82.0278C123.497 85.0532 123.544 88.5469 123.584 91.6301L123.587 91.8253V91.8257C123.617 94.0423 123.642 96.0597 123.406 97.8869C123.172 99.6976 122.695 101.196 121.806 102.4C120.904 103.621 119.542 104.558 117.812 105.354C116.075 106.153 114.096 106.753 112.025 107.381L111.867 107.428C108.876 108.334 105.503 109.356 102.916 111.205C100.343 113.041 98.313 115.903 96.5289 118.418L96.4859 118.478C95.2354 120.235 94.0381 121.912 92.7186 123.3C91.4061 124.681 90.0592 125.679 88.5628 126.157Z"
-                            fill="#FF8EC6" stroke="black" stroke-width="3" />
-                    </svg>
-                    <div class="shadow"></div>
-                </div>
-            </a>
-        </div>
+         </div>
+      </section>
 
 
 
-    </header>
-    <section class="main-section">
-        <div class="section" id="section1">
 
-            <div class="icon-item">
-                <img src="./img/item01.svg" alt="Descrição da imagem">
-                <p>Presenteie quem voce ama</p>
-              </div>
-          </div>
-        </div>
-    
-        <div class="section" id="section2">
-            <div class="icon-item">
-                <img src="./img/item04.svg" alt="Descrição da imagem">
-                <p>Entrega rápida com desconto bla bla</p>
-              </div>
-          </div>
-        </div>
-    
-        <div class="section" id="section3">
-            <div class="icon-item">
-                <img src="./img/item03.svg" alt="Descrição da imagem">
-                <p>Receba em até 03 dias na sua casa</p>
-              </div>
-          </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <ul class="links-uteis">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-                <ul class="redes-sociais">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                </ul>
+
+      <section class="popular section" id="collections">
+         <div class="popular__container container">
+            <div class="popular__data">
+
+               <div class="title">
+                  <img src="assets/img/PATUA_logo_clover.svg" alt="">
+                  <h2 class="section__title">Em alta</h2>
+                  <img src="assets/img/PATUA_logo_clover.svg" alt="">
+               </div>
+
+
+               <!-- <h2 class="section__title">COLLECTIONS</h2> -->
+               <p class="popular__description">
+                  "Vemos um novo começo de era... com gente fina, elegante e sincera"
+               </p>
+            </div>
+            <div class="popular__content grid swiper">
+               <div class="swiper-wrapper">
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blob">
+                        <img src="assets/img/necklace_1.jpg" alt="popular__image" class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Ramsele</h3>
+                     <span class="popular__subtitle">Pendant Lamp</span>
+                     <h3 class="popular__price">
+                        <span>$</span>14
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                     </button>
+                  </article>
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blob">
+                        <img src="assets/img/necklace_2.jpg" alt="popular__image" class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Vingmast</h3>
+                     <span class="popular__subtitle">Pendant Lamp</span>
+                     <h3 class="popular__price">
+                        <span>$</span>20
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                     </button>
+                  </article>
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blob">
+                        <img src="assets/img/necklace_3.jpg" alt="popular__image" class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Mojna</h3>
+                     <span class="popular__subtitle">Pendant Lamp</span>
+                     <h3 class="popular__price">
+                        <span>$</span>18
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                     </button>
+                  </article>
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blob">
+                        <img src="assets/img/necklace_4.jpg" alt="popular__image" class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Vaexjoe</h3>
+                     <span class="popular__subtitle">Pendant Lamp</span>
+                     <h3 class="popular__price">
+                        <span>$</span>16
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                     </button>
+                  </article>
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blob">
+                        <img src="assets/img/necklace_5.jpg" alt="popular__image" class="popular__img">
+                     </div>
+                     <h3 class="popular__name">Solklint</h3>
+                     <span class="popular__subtitle">Pendant Lamp</span>
+                     <h3 class="popular__price">
+                        <span>$</span>17
+                     </h3>
+                     <button class="popular__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                     </button>
+                  </article>
+               </div>
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-double-line"></i>
+               </div>
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-double-line"></i>               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+      <!--=============== TESTIMONIALS ===============-->
+      <section class="testimonial section" id="testimonials">
+         <!-- <span class="section__subtitle">My Clients Say</span> -->
+
+         <div class="testimonial__container container swiper">
+           
+           
+            <div class="title">
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
+               <h2 class="section__title">Depoimentos</h2>
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
+            </div>
+           
+           
+            <!-- <h2 class="section__title">TESTIMONIALS</h2> -->
+
+
+
+
+            <swiper-container class="mySwiper testimonial" pagination="true" pagination-clickable="true">
+               <swiper-slide class="testimonial">
+
+                  
+                  <div class="person">
+                     <img src="assets/img/necklace_1.jpg" alt="" class="testimonial__img">
+                     <h3 class="testimonial__name">John Doe</h3>
+                  </div>
+                  <p class="testimonial__description">
+                   Your designs have transformed our website,
+                   making it visually appealing and user-friendly.
+                  </p>
+            
+               </swiper-slide>
+               <swiper-slide>Slide 2</swiper-slide>
+               <swiper-slide>Slide 3</swiper-slide>
+               
+            </swiper-container>
+
+            <style>
+               .testimonial__container swiper-container {
+                  width: 100%;
+                  height: 200px;
+                  padding-bottom: 1.7rem;
+               }
+
+               .raccoon swiper-slide {
+                 
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+
+               swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+               }
+            </style>
+
+
+
+
+
+
+            <!-- <div class="swiper-wrapper">
+           <div class="testimonial__card swiper-slide">
+               <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+               <h3 class="testimonial__name">John Doe</h3>
+               <p class="testimonial__description">
+                   Your designs have transformed our website,
+                   making it visually appealing and user-friendly.
+               </p>
+           </div>
+           <div class="testimonial__card swiper-slide">
+               <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+               <h3 class="testimonial__name">Pula Vusy</h3>
+               <p class="testimonial__description">
+                   The attention to detail in your UI/UX work has
+                   greatly enhanced our app's usability and overall user experience.
+               </p>
+           </div>
+           <div class="testimonial__card swiper-slide">
+               <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+               <h3 class="testimonial__name">Sara Cill</h3>
+               <p class="testimonial__description">
+                   Your expertise in frontend shines
+                   through in the seamless functionality and responsiveness of our website.
+               </p>
+           </div>
+       </div>
+       <div class="swiper-pagination"></div> -->
+         </div>
+      </section>
+
+
+
+      <section class="contact section" id="contact">
+
+         <div class="contact__container container grid">
+
+
+            <div class="title">
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
+               <h2 class="section__title">CONTACT US</h2>
+               <img src="assets/img/PATUA_logo_clover.svg" alt="">
             </div>
 
-            <div class="footer-bottom">
-                <p>Todos os direitos reservados &copy; 2023 PATUÁ</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="app.js"></script>
+
+
+            <!-- <h2 class="section__title">CONTACT US</h2> -->
+
+            <div class="contact__content">
+
+               <div class="contact__info">
+
+                  <div class="contact__card">
+                     <div class="icon_line">
+                        <i class='bx bxl-whatsapp contact__card-icon'></i>
+                        <h3 class="contact__card-title">Whatsapp</h3>
+                     </div>
+                     <span class="contact__card-data">+91-70165-66326</span>
+
+                     <a href="#" target="_blank" class="contact__button">
+                        WRITE US 
+                        <!-- <i class='bx bx-right-arrow-alt contact__button-icon'></i> -->
+                     </a>
+                  </div>
+                  <div class="contact__card">
+                     <div class="icon_line">
+                        <i class='bx bxl-instagram contact__card-icon'></i>
+                        <h3 class="contact__card-title">instagram</h3>
+                     </div>
+                     <span class="contact__card-data">@patua</span>
+
+                     <a href="#" target="_blank" class="contact__button">
+                        CHECK US 
+                        <!-- <i class='bx bx-right-arrow-alt contact__button-icon'></i> -->
+                     </a>
+                  </div>
+
+
+
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+
+
+
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content grid">
+            <div>
+               <a href="#" class="footer__logo">PATUÁ</a>
+               <div class="footer__description">
+                  A loja mais querida de BH <br>
+                  (preencher) <br>
+                  (preencher)
+               </div>
+            </div>
+         </div>
+         <div class="footer__group">
+
+            <span class="footer__copy">&#169; Todos os direitos reservados © 2023 PATUÁ.</span>
+         </div>
+      </div>
+   </footer>
+
+   <!-- <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a> -->
+
+   <script src="assets/js/scrollreveal.min.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
 </body>
 
 </html>

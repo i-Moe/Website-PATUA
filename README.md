@@ -1,3 +1,0 @@
-# PATUA
-**Let's gooooo**
-SHIAWASEEEEEEEEEEEEEE
